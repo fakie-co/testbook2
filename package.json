@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic@latest --project-token=chpt_744a34c4a69a35a",
+    "chromatic-staging": "CHROMATIC_INDEX_URL=https://index.staging-chromatic.com npx chromatic@latest --project-token=chpt_cbf882eaea7f4e0"
+
   },
   "dependencies": {
     "react": "^19.1.1",
