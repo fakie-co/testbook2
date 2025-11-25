@@ -35,7 +35,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    label: 'Button222',
+    label: 'Button2223',
   },
 };
 
