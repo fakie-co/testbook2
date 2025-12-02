@@ -37,6 +37,5 @@ jobs:
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_STAGING_PROJECT_TOKEN }}
-          debug: true
         env:
           CHROMATIC_INDEX_URL: https://index.staging-chromatic.com
