@@ -29,7 +29,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button1234',
+    label: 'Button12345',
   },
 };
 
@@ -42,7 +42,7 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button3334',
+    label: 'ButtonPR',
   },
 };
 
