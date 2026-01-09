@@ -2,8 +2,7 @@ name: "Chromatic Staging"
 
 on:
   push:
-    branches-ignore:
-      - 'gh-readonly-queue/**'
+  pull_request:
   merge_group:
     types: [checks_requested]
 
