@@ -2,12 +2,16 @@ name: "Chromatic Staging"
 
 on:
   push:
-    branches-ignore:
-      - 'gh-readonly-queue/**'
+  pull_request:
   merge_group:
     types: [checks_requested]
 
 jobs:
+  merge_queue_force_failure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fail
+        run: exit 0;
   chromatic:
     name: Run Chromatic
     runs-on: ubuntu-latest
