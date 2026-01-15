@@ -8,10 +8,11 @@ on:
 
 jobs:
   merge_queue_force_failure:
+    if: ${{ github.event.merge_group }}
     runs-on: ubuntu-latest
     steps:
       - name: fail
-        run: exit 0;
+        run: exit 1
   chromatic:
     name: Run Chromatic
     runs-on: ubuntu-latest
